@@ -13,11 +13,11 @@ import javax.sql.DataSource;
 public class jdbcProperties {
     @Value("${jdbc.url}")
     private String url;
-    @Value("${jdbc.url}")
+    @Value("${jdbc.driverClassName}")
     private String driverClassName;
-    @Value("${jdbc.url}")
+    @Value("${jdbc.userName}")
     private String userName;
-    @Value("${jdbc.url}")
+    @Value("${jdbc.password}")
     private String password;
 
     @Bean
