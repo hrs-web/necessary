@@ -1,33 +1,42 @@
 package cn.hrsweb.springboot.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import javax.sql.DataSource;
-
-@Configuration
-@PropertySource("classpath:jdbc.properties")
+@ConfigurationProperties(prefix = "jdbc") //读取资源配置类（application.properties）
 public class jdbcProperties {
-    @Value("${jdbc.url}")
-    private String url;
-    @Value("${jdbc.driverClassName}")
     private String driverClassName;
-    @Value("${jdbc.userName}")
-    private String userName;
-    @Value("${jdbc.password}")
+    private String url;
+    private String  username;
     private String password;
-
-    @Bean
-    public DataSource dateSource(){
-        DruidDataSource dataSource = new DruidDataSource();
-        dataSource.setUrl(url);
-        dataSource.setDriverClassName(driverClassName);
-        dataSource.setUsername(userName);
-        dataSource.setPassword(password);
-        return dataSource;
+    public String getDriverClassName() {
+        return driverClassName;
     }
 
+    public void setDriverClassName(String driverClassName) {
+        this.driverClassName = driverClassName;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
