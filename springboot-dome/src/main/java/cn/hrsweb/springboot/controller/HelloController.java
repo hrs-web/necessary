@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.sql.DataSource;
 
-@RestController
+@RestController   // 是@Controller和@ResponseBody的合体
 @RequestMapping("hello")
 @EnableAutoConfiguration
 public class HelloController {
