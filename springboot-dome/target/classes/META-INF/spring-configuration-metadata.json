@@ -1,0 +1,38 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.hrsweb.springboot.config.JdbcConfiguration",
+      "name": "jdbc",
+      "sourceMethod": "dateSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "cn.hrsweb.springboot.config.jdbcProperties",
+      "name": "jdbc",
+      "type": "cn.hrsweb.springboot.config.jdbcProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.hrsweb.springboot.config.jdbcProperties",
+      "name": "jdbc.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.hrsweb.springboot.config.jdbcProperties",
+      "name": "jdbc.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.hrsweb.springboot.config.jdbcProperties",
+      "name": "jdbc.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.hrsweb.springboot.config.jdbcProperties",
+      "name": "jdbc.username",
+      "type": "java.lang.String"
+    }
+  ]
+}
