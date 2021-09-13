@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="http-demo (2)" />
-        <module name="http-demo" />
-        <module name="springboot-user" />
         <module name="springboot-dome" />
+        <module name="user-service-provider" />
+        <module name="http-demo" />
+        <module name="user-service-consumer" />
+        <module name="http-demo (2)" />
+        <module name="springboot-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +20,8 @@
       <module name="http-demo (2)" target="1.8" />
       <module name="springboot-dome" target="1.8" />
       <module name="springboot-user" target="1.8" />
+      <module name="user-service-consumer" target="1.8" />
+      <module name="user-service-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,6 +29,8 @@
       <module name="http-demo (2)" options="-parameters" />
       <module name="springboot-dome" options="-parameters" />
       <module name="springboot-user" options="-parameters" />
+      <module name="user-service-consumer" options="-parameters" />
+      <module name="user-service-provider" options="-parameters" />
     </option>
   </component>
 </project>
