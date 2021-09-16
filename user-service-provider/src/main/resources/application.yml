@@ -7,7 +7,7 @@ spring:
     username: root
     password: '0826'
   application:
-    name: provider-server
+    name: PROVIDER-SERVER
 
 mybatis:
   type-aliases-package: cn.hrsweb.provider.pojo
@@ -15,3 +15,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:10086/eureka
+  instance:
+    prefer-ip-address: true # 其他服务获取地址时获取ip而不是hostname
+    ip-address: 127.0.0.1

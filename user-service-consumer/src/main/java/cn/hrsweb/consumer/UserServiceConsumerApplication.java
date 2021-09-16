@@ -3,6 +3,7 @@ package cn.hrsweb.consumer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -10,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient  //开启Eureka的客户端
 public class UserServiceConsumerApplication {
     @Bean
+    @LoadBalanced  // 开启ribbon的负载均衡
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }

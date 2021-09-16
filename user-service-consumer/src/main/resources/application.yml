@@ -1,13 +1,13 @@
 server:
-  port: 8082
+  port: 8083
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:10086/eureka
     #instance:
-      #prefer-ip-address: true 当其它服务获取地址时提供ip而不是hostname
       #ip-address: 127.0.0.1 指定自己的ip信息，不指定的话会自己寻找
+    registry-fetch-interval-seconds: 10  # 每隔10秒重新获取并更新数据
 spring:
   application:
-    name: consumer-server
+    name: CONSUMER-SERVER
