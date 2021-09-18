@@ -22,19 +22,16 @@ public class UserController {
 
     @Autowired
     private DiscoveryClient discoveryClient;
-
     // eureka演示
     @GetMapping
     public User queryById(@PathParam("id")Long id){
         // 通过服务的id获取服务实例的集合
-        List<ServiceInstance> instances = discoveryClient.getInstances("provider-server");
+        List<ServiceInstance> instances = discoveryClient.getInstances("PROVIDER-SERVER");
         ServiceInstance instance = instances.get(0);
         System.out.println(instance.getHost());
         System.out.println(instance.getPort());
         return restTemplate.getForObject("http://"+instance.getHost()+":"+instance.getPort()+"/provider/"+id,User.class);
     }
-
-
     // Ribbon演示
     @GetMapping("user")
     public List<User> queryByUserIds(@RequestParam(value = "ids",required=false)List<Long> ids){
@@ -49,4 +46,5 @@ public class UserController {
         });
         return users;
     }
+
 }
