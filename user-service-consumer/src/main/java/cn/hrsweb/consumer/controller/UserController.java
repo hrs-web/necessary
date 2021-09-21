@@ -1,6 +1,7 @@
 package cn.hrsweb.consumer.controller;
 
 import cn.hrsweb.consumer.pojo.User;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -23,6 +24,10 @@ public class UserController {
     @Autowired
     private DiscoveryClient discoveryClient;
     // eureka演示
+    /*
+        注意：当RestTemplate使用了负载均衡@LocalBlanced修饰之后这个方法就会出错
+              因为必须使用PROVIDER-SERVER(应用名)替代instance.getHost():instance.getPort()即ip:端口
+    */
     @GetMapping
     public User queryById(@PathParam("id")Long id){
         // 通过服务的id获取服务实例的集合
@@ -47,4 +52,19 @@ public class UserController {
         return users;
     }
 
+    // Hystrix演示
+    @GetMapping("hystrix")
+    @HystrixCommand(fallbackMethod = "queryByIdFallback")
+    public String queryByIdHystrix(@PathParam("id")Long id){
+        // 演示熔断后重试机制，id=50后出现异常服务熔断id等于其他的请求也不能用
+        if (id==50){
+            throw new RuntimeException();
+        }
+        return restTemplate.getForObject("http://PROVIDER-SERVER/provider/"+id,String.class);
+    }
+
+    // 局部方法调用此方法时，两者返回值和参数需要一致
+    public String queryByIdFallback(Long id){
+        return "服务器正忙，请稍后再试。";
+    }
 }

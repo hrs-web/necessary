@@ -11,3 +11,10 @@ eureka:
 spring:
   application:
     name: CONSUMER-SERVER
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000   #设置hystrix的超时时间为6000秒
