@@ -1,5 +1,6 @@
 package cn.hrsweb.consumer.controller;
 
+import cn.hrsweb.consumer.client.UserClient;
 import cn.hrsweb.consumer.pojo.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,5 +67,15 @@ public class UserController {
     // 局部方法调用此方法时，两者返回值和参数需要一致
     public String queryByIdFallback(Long id){
         return "服务器正忙，请稍后再试。";
+    }
+
+
+//-------------Feign集成了Ribbon和Hystrix，以后使用Feign就行--------------------------------
+    @Autowired
+    private UserClient userClient;
+
+    @GetMapping("feign")
+    public String queryByIdFeign(@PathParam("id")Long id){
+        return userClient.queryUserByIdFeign(id).toString();
     }
 }

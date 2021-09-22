@@ -44,6 +44,11 @@
             <artifactId>spring-cloud-netflix-hystrix</artifactId>
             <version>2.2.3.RELEASE</version>
         </dependency>
+        <!--注入Feign依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
