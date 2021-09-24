@@ -16,15 +16,15 @@
         <tr>
             <th>id</th>
             <th>姓名</th>
-            <th>地址</th>
             <th>性别</th>
+            <th>地址</th>
             <th>生日</th>
         </tr>
         <tr th:each="user : ${users}">
             <td th:text="${user.id}">1</td>
             <td th:text="${user.username}">张三</td>
-            <td th:text="${user.address}">广东</td>
             <td th:text="${user.sex}">男</td>
+            <td th:text="${user.address}">广东</td>
             <td th:text="${user.birthday}">1980-02-30</td>
         </tr>
     </table>
