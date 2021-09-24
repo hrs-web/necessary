@@ -1,0 +1,12 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    name: user-zuul
+
+zuul:
+  routes:
+    user-provider:               # 路由id，自定义
+      path: /provider-server/**  # 映射路径
+      url: http://localhost:8081 # 映射路径对应的url
