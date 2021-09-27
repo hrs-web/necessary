@@ -3,10 +3,28 @@ server:
 
 spring:
   application:
-    name: user-zuul
+    name: USER-ZUUL
 
 zuul:
+  prefix: /api    # 路由前缀
   routes:
-    user-provider:               # 路由id，自定义
-      path: /provider-server/**  # 映射路径
-      url: http://localhost:8081 # 映射路径对应的url
+    PROVIDER-SERVER:             # 路由名称，自定义
+      path: /provider-server/**  # 映射路径。当省略时映射路径为路由名称
+      #serviceId: PROVIDER-SERVER # 服务名称和路由名称写在一起就可以省略
+      #url: http://localhost:8081 # 映射路径对应的url
+  retryable: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    registry-fetch-interval-seconds: 5 # 获取服务列表的周期：5秒
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+hystrix:
+  command:
+    PROVIDER-SERVER:
+      execution:
+        isolation:
+          thread:
+           timeoutInMilliseconds: 6000

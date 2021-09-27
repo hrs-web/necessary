@@ -18,12 +18,12 @@ public class UserController {
 
     @GetMapping("{id}")
     public User queryById(@PathVariable("id")Long id){
-        /*try {
+        try {
             // 为了演示延时现象，睡眠时间随机0~2000毫秒(默认1000毫秒就熔断)
-            Thread.sleep(new Random().nextInt(2000));
+            Thread.sleep(new Random().nextInt(3000));
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }*/
+        }
         return userService.queryById(id);
     }
 }
