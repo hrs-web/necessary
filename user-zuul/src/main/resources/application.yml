@@ -10,7 +10,7 @@ zuul:
   routes:
     PROVIDER-SERVER:             # 路由名称，自定义
       path: /provider-server/**  # 映射路径。当省略时映射路径为路由名称
-      #serviceId: PROVIDER-SERVER # 服务名称和路由名称写在一起就可以省略
+      #serviceId: PROVIDER-SERVER # 服务名称和路由名称相同就可以省略
       #url: http://localhost:8081 # 映射路径对应的url
   retryable: true
 eureka:

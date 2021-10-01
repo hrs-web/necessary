@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es6</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 1.let和const命令
+    // javascript定义变量只有一种var，变量有时会莫名奇妙成为全局变量
+    for (var i=0;i<5;i++){
+        console.log(i);
+    }
+    console.log("我是外部变量："+i); // 我是外部变量：5
+    // es6优化
+    for (let j=0;j<5;j++){
+        console.log(j);
+    }
+    //console.log(j); // 程序出错
+    // const是常量，不能被改变
+
+    /* 2.es6为字符串扩展新的API
+           includes()：返回布尔类值，表示源字符串是否包含该参数
+           startsWith()：返回布尔值，表示参数是否为源字符串的头部
+           endsWith()：返回布尔值，表示参数是否为源字符串的尾部
+        字符串模板：str = '1234
+                       5678';
+    */
+
+    /* 3.解构表达式，比如:
+            let arr = [1,2,3];
+            const [x,y,z] = arr;  x,y,z分别对应1,2,3
+
+         对象解构
+            const person={
+                name:"hrs",
+                age:23,
+                language:['html','css','javascript']
+            }
+          const {name,age,language} = person   // 解构表达获取person值
+     */
+
+    // 4.函数优化
+       // 函数参数默认值
+            function add(a,b) {
+                // 判断b是否为空，为空就给默认值1
+                b=b || 1;
+                return a+b;
+            }
+            console.log(add(10));
+            //优化
+            function add1(a,b=1) {
+                return a+b;
+            }
+            console.log(add1(100));
+        // 箭头函数
+             /*一个函数时
+                 var print = function (obj) {
+                     console.log(obj);
+                 }*/
+               //简写：var print2 = obj => console.log(obj);
+
+
+             /*多个函数时
+                 var sum = function (a,b) {
+                     return a+b;
+                 }*/
+               //简写：var sum2 = (a,b) => a+b
+               /*
+                 代码不止一行时，用{}
+                       var sum3 = (a,b) => {
+                            return a+b;
+                       }
+                */
+</script>
+</html>
