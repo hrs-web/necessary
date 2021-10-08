@@ -74,5 +74,29 @@
                             return a+b;
                        }
                 */
+        // 对象函数缩写
+            /*let person = {
+                name:"jack",
+                // 传统
+                eat: function (food) {
+                    console.log(this.name+"在吃"+food);
+                },
+                // 箭头函数
+                eat2: food=>console.log(person.name+"在吃"+food),
+                // 简写版
+                eat3(food){
+                    console.log(this.name+"在吃"+food);
+                }
+            }
+            person.eat("苹果");
+            person.eat2("西瓜");
+            person.eat3("茄子");*/
+        // 箭头函数结合
+            let p = {
+                name : "haha",
+                age:20
+            }
+            let fun3 = ({name}) => console.log(name);
+            fun3(p);
 </script>
 </html>
