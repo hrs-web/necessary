@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ES6/ES6.iml" filepath="$PROJECT_DIR$/ES6/ES6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-vue/hello-vue.iml" filepath="$PROJECT_DIR$/hello-vue/hello-vue.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dome/springboot-dome.iml" filepath="$PROJECT_DIR$/springboot-dome/springboot-dome.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-user/springboot-user.iml" filepath="$PROJECT_DIR$/springboot-user/springboot-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service-consumer/user-service-consumer.iml" filepath="$PROJECT_DIR$/user-service-consumer/user-service-consumer.iml" />
