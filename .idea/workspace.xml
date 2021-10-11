@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0d222e-d828-49c1-8e8a-35c4fed04073" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hello-vue/hello-vue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-vue/hello-vue.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-vue/hello-vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/hello-vue/hello-vue.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/springboot-dome/target/" />
@@ -42,15 +39,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-service-consumer/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-user/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
@@ -71,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/es6.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="1501">
               <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
             </state>
           </provider>
@@ -81,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/hello-vue/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -89,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello-vue/hello-vue.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="428">
+              <caret line="98" column="35" lean-forward="true" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -201,6 +189,8 @@
         <option value="$PROJECT_DIR$/ES6/es6.html" />
         <option value="$PROJECT_DIR$/hello-vue/package.json" />
         <option value="$PROJECT_DIR$/hello-vue/node_modules/hello-vue.html" />
+        <option value="$PROJECT_DIR$/hello-vue/11.html" />
+        <option value="$PROJECT_DIR$/hello-vue/111.html" />
         <option value="$PROJECT_DIR$/hello-vue/hello-vue.html" />
       </list>
     </option>
@@ -266,8 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +271,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,6 +519,8 @@
       <workItem from="1633830793555" duration="637000" />
       <workItem from="1633831468687" duration="6996000" />
       <workItem from="1633849667876" duration="4112000" />
+      <workItem from="1633870114285" duration="996000" />
+      <workItem from="1633918276267" duration="11587000" />
     </task>
     <task id="LOCAL-00001" summary="tow commit">
       <created>1629904648598</created>
@@ -677,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633685948504</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="vue入门案例">
+      <created>1633870251496</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1633870251496</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -704,12 +703,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217170000" />
+    <option name="totallyTimeSpent" value="229753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25201073" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25871313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -726,7 +726,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49934897" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" x="24" y="589" width="1492" height="190" id="Terminal" order="10" type="FLOATING" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50065106" side_tool="true" weight="0.3281471" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50065106" side_tool="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49934897" weight="0.32967034" />
@@ -805,11 +805,10 @@
     <MESSAGE value="Zuul" />
     <MESSAGE value="Zuul过滤" />
     <MESSAGE value="es6" />
-    <option name="LAST_COMMIT_MESSAGE" value="es6" />
+    <MESSAGE value="vue入门案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue入门案例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.52/tomcat-embed-core-9.0.52.jar!/org/apache/tomcat/util/net/SocketProcessorBase.class" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.52/tomcat-embed-core-9.0.52.jar!/org/apache/tomcat/util/threads/TaskThread.class" />
     <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.52/tomcat-embed-core-9.0.52.jar!/org/apache/tomcat/util/threads/ThreadPoolExecutor.class" />
     <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.52/tomcat-embed-core-9.0.52-sources.jar!/org/apache/coyote/AbstractProtocol.java" />
     <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.52/tomcat-embed-core-9.0.52-sources.jar!/org/apache/tomcat/util/threads/TaskThread.java" />
@@ -1135,6 +1134,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user-service-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/es6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1501">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-vue/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user-service-consumer/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1170,31 +1190,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service-eureka/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/hello-vue/11.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="133">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-vue/package.json">
+    <entry file="file://$PROJECT_DIR$/hello-vue/111.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/es6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hello-vue/hello-vue.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="428">
+          <caret line="98" column="35" lean-forward="true" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
         </state>
       </provider>
     </entry>

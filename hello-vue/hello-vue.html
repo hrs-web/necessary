@@ -6,7 +6,48 @@
 </head>
 <body>
     <div id="app">
-        <input v-model="num"/><button v-on:click="add">点我+1</button>
+        <input type="text" v-model="message"/>
+        <hr/>
+        <h1>你的生日为：
+<!--            {{new Date(birthday).getFullYear()+'-'+new Date(birthday).getMonth()+'-'+new Date(birthday).getDay()}}-->
+            {{brithday1}}
+        </h1>
+        <hr/>
+        <input type="text" v-model="stock"/>
+        <div :class="{active:stock>0}" class="static static1" title="stock">加入购物车</div>
+        <hr/>
+        <input type="button" value="点击获取随机数" @click="random=Math.random()"/>{{random}}<br/>
+        <span v-if="random>0.75">大于0.75</span>
+        <span v-else-if="random>0.5">大于0.5</span>
+        <span v-else-if="random>0.25">大于0.25</span>
+        <span v-else="random>0">大于0</span>
+        <hr/>
+        <input type="button" value="点击切换" @click="show=!show">
+        <div v-if="show">您看到我了，v-if</div>
+        <div v-show="show">您看到我了，v-show</div>
+        <hr/>
+        <ul>
+            <li v-for="(value,key,index) in user">
+                {{index}}-{{key}}-{{value}}
+            </li>
+        </ul>
+        <ul>
+            <li v-if="user.gender=='女'" v-for="(user,index) in users":key=index>
+                {{index+1}}-{{user.name}}:{{user.gender}}:{{user.age}}
+            </li>
+        </ul>
+        <hr/>
+        <input type="checkbox" v-model="language" value="java"/>java
+        <input type="checkbox" v-model="language" value="php"/>php
+        <input type="checkbox" v-model="language" value="C++"/>C++
+        <hr/>
+        v-text:<span v-text="hello">123</span><br/>
+        v-html:<span v-html="hello">123</span>
+        <hr/>
+        {{hello}}
+        <hr/>
+        <input v-model="num" @keyup.enter="add"/><button @click="add">点我+1</button><br/>
+        <input v-model="num"/><button v-on:contextMenu.prevent="decrement">点我-1</button>
         <h3>{{name}},非常帅气！有{{num}}位女生迷恋他</h3>
     </div>
 </body>
@@ -16,12 +57,47 @@
     var app = new Vue({
         el:"#app",  // el即element，该vue实例要渲染的页面元素
         data:{      // 页面渲染需要的数据
-            name:"小明",
-            num:"5"
+            name:'小明',
+            num:'5',
+            hello:'',
+            language:[],
+            users:[
+                {name:'柳岩', gender:'女', age: 21},
+                {name:'虎哥', gender:'男', age: 30},
+                {name:'范冰冰', gender:'女', age: 24},
+                {name:'刘亦菲', gender:'女', age: 18},
+                {name:'古力娜扎', gender:'女', age: 25}
+            ],
+            user:{name:"小明",gender:"人妖",age:"100"},
+            show:true,
+            random:0,
+            stock:0,
+            birthday:1529032123201, // 毫秒值
+            message:''
+        },
+        // 钩子函数，在实例创建之后调用
+        created() {
+            this.hello = "<h1>hello world,我出生了</h1>";
+            //console.log(this);
         },
         methods:{
             add:function () {
                 this.num++;
+            },
+            decrement(){
+                // event.preventDefault(); 需要操作dom
+                this.num--;
+            },
+        },
+        computed:{  // 计算属性，这里的所有方法都要有返回值。像数据结构一样使用。基于依赖的数据模型进行缓存
+            brithday1(){
+                const date = new Date(this.birthday);
+                return date.getFullYear()+'-'+date.getMonth()+'-'+date.getDay();
+            }
+        },
+        watch:{
+            message(newVal,oldVal){
+                console.log(newVal,oldVal);
             }
         }
     });
