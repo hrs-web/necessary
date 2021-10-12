@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>局部组件</title>
+</head>
+<body>
+    <div id="app">
+        <!--使用子组件时传递属性，v-bind指向父组件属性-->
+        <my-List :items="lessons"></my-List>
+        <hr/>
+        <counter1></counter1>
+    </div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    const myList = {  // props验证
+        template: '<ul><li v-for="item in items" :key="item.id">{{item.name}}-{{item.age}}</li></ul>',
+        props:{
+            items:{
+                type:Array,
+                default:[],
+                required:true
+            }
+        }
+    };
+    const counter = {
+        template:'<div><h1>打个招呼：{{num}}</h1><input type="button" @click="num++" value="点击+1"/></div>',
+        data() {
+            return{
+                num:0
+            }
+        }
+    };
+    const app = new Vue({
+        el:'#app',
+        data:{
+            lessons:[{id:1,name:'小黄',age:23},
+                    {id:2,name:'小黑',age:13},
+                    {id:3,name:'小红',age:67}
+            ]
+        },
+        components:{
+            counter1:counter,
+            myList:myList
+        }
+    })
+</script>
+</html>

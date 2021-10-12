@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局组件</title>
+</head>
+<body>
+    <div id="app">
+        <introduce :title="title"></introduce>
+        <hr/>
+        <!--使用定义好的全局组件-->
+        <counter></counter>
+    </div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+
+    Vue.component("counter",{
+        template:'<button @click="num++">点击+1，{{num}}</button>',
+        data(){
+            return {
+                num: 0
+            }
+        }
+    });
+    // 父向子传递值
+    Vue.component("introduce",{
+        template:'<h2>打个招呼：{{title}}</h2>',
+        props:{
+            title:{
+                type:Number,
+                required:true
+            }
+        }
+    });
+    const app = new Vue({
+        el:'#app',
+        data:{
+            title:123
+        }
+    });
+</script>
+</html>
