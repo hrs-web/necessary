@@ -14,29 +14,5 @@
         <router-view></router-view>
     </div>
 </body>
-<script src="../node_modules/vue/dist/vue.js"></script>
-<script src="../node_modules/vue-router/dist/vue-router.js"></script>
-<script src="js/login.js"></script>
-<script src="js/register.js"></script>
-<script>
-    // 创建VueRouter路由实例
-    const router = new VueRouter({
-        routes:[{
-            path:'/login',  // 路由路径
-            component:loginForm // 路由组件名
-        },
-        {
-            path:'/register',
-            component:registerForm
-        }]
-    });
-    const vue = new Vue({
-        el:'#app',
-        components:{
-            loginForm,
-            registerForm
-        },
-        router  // 引用上面定义的路由对象
-    })
-</script>
+<script src="../dist/build.js"></script>
 </html>

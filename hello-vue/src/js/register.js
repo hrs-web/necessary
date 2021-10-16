@@ -4,4 +4,5 @@ const registerForm = {
         '密&emsp;&emsp;码：<input type="password"/><br>' +
         '确认密码：<input type="password"/><br/>' +
         '<input type="button" value="注册"/></div>'
-}
+};
+export default registerForm;
