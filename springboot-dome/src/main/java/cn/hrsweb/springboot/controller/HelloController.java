@@ -2,9 +2,7 @@ package cn.hrsweb.springboot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.sql.DataSource;
 
@@ -17,7 +15,22 @@ public class HelloController {
 
     @GetMapping("show")
     public String test(){
-        return "hello spring boot! "+dataSource;
+        return "hello spring"+dataSource;
+    }
+
+    @PostMapping("post")
+    public void post(){
+        System.out.println("执行了post方法");
+    }
+
+    @PutMapping("put")
+    public void put(){
+        System.out.println("执行了put方法");
+    }
+
+    @DeleteMapping("delete")
+    public void delete(){
+        System.out.println("执行了delete方法");
     }
 
 }

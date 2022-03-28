@@ -14,9 +14,11 @@
         <module name="user-zuul" />
         <module name="user-service-eureka" />
         <module name="springboot-user" />
+        <module name="elasticsearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="elasticsearch" target="1.8" />
       <module name="http-demo" target="1.8" />
       <module name="http-demo (1)" target="1.8" />
       <module name="http-demo (2)" target="1.8" />
@@ -30,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elasticsearch" options="-parameters" />
       <module name="http-demo (2)" options="-parameters" />
       <module name="springboot-dome" options="-parameters" />
       <module name="springboot-user" options="-parameters" />
