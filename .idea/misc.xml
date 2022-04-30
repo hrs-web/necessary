@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/user-service-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/user-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-feign-dome/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-feign-api/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-dome/pom.xml" />
       </list>
     </option>
   </component>

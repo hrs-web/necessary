@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-dome" />
-        <module name="user-service-provider" />
+        <module name="nacos-feign-dome" />
+        <module name="rabbitmq-dome" />
         <module name="http-demo" />
-        <module name="user-service-consumer" />
-        <module name="http-demo (2)" />
-        <module name="user-zuul" />
-        <module name="user-service-eureka" />
         <module name="springboot-user" />
+        <module name="http-demo (2)" />
+        <module name="user-service-consumer" />
+        <module name="springboot-dome" />
+        <module name="nacos-mybatis-dome" />
+        <module name="user-service-eureka" />
+        <module name="nacos-feign-api" />
         <module name="elasticsearch" />
+        <module name="user-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +25,10 @@
       <module name="http-demo" target="1.8" />
       <module name="http-demo (1)" target="1.8" />
       <module name="http-demo (2)" target="1.8" />
+      <module name="nacos-feign-api" target="1.8" />
+      <module name="nacos-feign-dome" target="1.8" />
+      <module name="nacos-mybatis-dome" target="1.8" />
+      <module name="rabbitmq-dome" target="1.8" />
       <module name="springboot-dome" target="1.8" />
       <module name="springboot-user" target="1.8" />
       <module name="user-service-consumer" target="1.8" />
@@ -34,6 +41,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="elasticsearch" options="-parameters" />
       <module name="http-demo (2)" options="-parameters" />
+      <module name="nacos-feign-api" options="-parameters" />
+      <module name="nacos-feign-dome" options="-parameters" />
+      <module name="nacos-mybatis-dome" options="-parameters" />
+      <module name="rabbitmq-dome" options="-parameters" />
       <module name="springboot-dome" options="-parameters" />
       <module name="springboot-user" options="-parameters" />
       <module name="user-service-consumer" options="-parameters" />

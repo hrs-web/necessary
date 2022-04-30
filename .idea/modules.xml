@@ -5,6 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/ES6/ES6.iml" filepath="$PROJECT_DIR$/ES6/ES6.iml" />
       <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/hello-vue/hello-vue.iml" filepath="$PROJECT_DIR$/hello-vue/hello-vue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-feign-api/nacos-feign-api.iml" filepath="$PROJECT_DIR$/nacos-feign-api/nacos-feign-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-feign-dome/nacos-feign-dome.iml" filepath="$PROJECT_DIR$/nacos-feign-dome/nacos-feign-dome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-mybatis-dome/nacos-mybatis-dome.iml" filepath="$PROJECT_DIR$/nacos-mybatis-dome/nacos-mybatis-dome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-dome/rabbitmq-dome.iml" filepath="$PROJECT_DIR$/rabbitmq-dome/rabbitmq-dome.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dome/springboot-dome.iml" filepath="$PROJECT_DIR$/springboot-dome/springboot-dome.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-user/springboot-user.iml" filepath="$PROJECT_DIR$/springboot-user/springboot-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service-consumer/user-service-consumer.iml" filepath="$PROJECT_DIR$/user-service-consumer/user-service-consumer.iml" />

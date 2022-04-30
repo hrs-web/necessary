@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+    host: 192.168.182.100  # 默认使用15672端口
+    username: youxiang
+    password: youxiang
+    virtual-host: /youxiang  # 虚拟主机路径
